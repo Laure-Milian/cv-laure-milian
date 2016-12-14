@@ -1,0 +1,46 @@
+html, body {
+	background-color: #ffffff;
+	color: #333333;
+	font-family: sans-serif;
+	font-size: 14px;
+	padding: 0;
+}
+body {
+	width: 55%;
+	margin: 0 auto;
+}
+
+h1 {
+	margin-top: 1em;
+	font-family: 'Dosis', sans-serif;
+	font-size: 2em;
+}
+
+h2 {
+	font-family: 'Dosis', sans-serif;
+}
+
+.titres_sections {
+	font-size: 1.5em;
+	text-align: center;
+	color: grey;
+	font-family: 'Dosis', sans-serif;
+	font-weight: bold;
+}
+
+
+#header {
+	margin-left: 1em;
+}
+
+#main_header {
+	margin: 2em 0 2em 1em;
+}
+
+.contact {
+	font-size: 1.5em;
+	text-align: center;
+	color: #008080;
+	font-weight: bold;
+	font-family: 'Dosis', sans-serif;
+}
