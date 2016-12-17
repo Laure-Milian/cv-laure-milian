@@ -4,8 +4,19 @@
 	vertical-align: top;
 }
 
+.photo {
+	width: 17%;
+	padding-top: 0.4em;
+
+	img {
+		height: 7em;
+		width: 7em;
+		border-radius: 50%;
+	}
+}
+
 .title {
-	width: 55%;
+	width: 65%;
 
 	h1 {
 		font-family: $special_font;
@@ -27,15 +38,8 @@
 
 }
 
-.photo {
-	width: 17%;
-	padding-top: 0.4em;
-
-	img {
-		height: 7em;
-		width: 7em;
-		border-radius: 50%;
-	}
+.pictos {
+	text-align: right;
 }
 
 .presentation-paragraph {

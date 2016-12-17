@@ -14,8 +14,16 @@ html, body {
   display: inline-block;
   vertical-align: top; }
 
+.photo {
+  width: 17%;
+  padding-top: 0.4em; }
+  .photo img {
+    height: 7em;
+    width: 7em;
+    border-radius: 50%; }
+
 .title {
-  width: 55%; }
+  width: 65%; }
   .title h1 {
     font-family: "Dosis", sans-serif;
     font-size: 3em;
@@ -29,13 +37,8 @@ html, body {
     color: grey;
     font-weight: bold; }
 
-.photo {
-  width: 17%;
-  padding-top: 0.4em; }
-  .photo img {
-    height: 7em;
-    width: 7em;
-    border-radius: 50%; }
+.pictos {
+  text-align: right; }
 
 .presentation-paragraph {
   margin: 3em 0;
@@ -46,12 +49,13 @@ html, body {
 
 .container_menu {
   margin: 3em 0;
-  width: 100%;
-  height: 3em; }
+  width: 100%; }
 
 .container_menu ul {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  z-index: 100;
+  border-top: 0; }
   .container_menu ul li {
     display: inline-block;
     list-style: none;
@@ -66,7 +70,7 @@ html, body {
       padding-right: 1em;
       padding-bottom: 0.65em; }
   .container_menu ul .ugly_fix {
-    width: 6em; }
+    width: 8em; }
 
 .container_menu .active {
   font-weight: bold;
@@ -75,5 +79,52 @@ html, body {
   padding-bottom: 0.8em; }
   .container_menu .active a {
     color: #2b2a2a; }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  background-color: #FFFFFF;
+  margin-top: 0;
+  padding-top: 2em; }
+
+.bloc-formation {
+  margin-top: 3em; }
+
+.dates {
+  font-family: 'Helvetica Neue',Arial,Helvetica,sans-serif;
+  display: inline-block;
+  width: 15%;
+  vertical-align: top;
+  margin-top: 0.5em;
+  margin-left: 0.2em;
+  font-weight: bold;
+  text-align: center;
+  height: 2em; }
+
+.texte-formation {
+  display: inline-block;
+  margin-left: 1em;
+  width: 80%; }
+
+h4 {
+  font-family: 'Dosis', sans-serif;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: teal;
+  font-size: 1.2em; }
+
+h5 {
+  font-family: 'Helvetica Neue',Arial,Helvetica,sans-serif;
+  margin-top: 0.2em; }
+
+.blocs_projets {
+  height: 20em;
+  opacity: 50%;
+  background-color: #FFFFFF;
+  height: 15em;
+  text-align: center;
+  padding-top: 6em;
+  border: 0.1em solid grey; }
 
 /*# sourceMappingURL=style.css.map */

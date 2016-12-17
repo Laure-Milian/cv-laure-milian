@@ -1,37 +1,51 @@
 
 (function() {
-	$('.div_competences').show();
-	$('.div_formation, .div_XPpro, .div_projets').hide();
+	
+	"use strict";
 
-	$(".competences").on('click', function() {
-		$('.competences').addClass('active');
-		$('.formation, .XPpro, .projets').removeClass('active');
-		$('.div_competences').show();
-		$('.div_formation, .div_XPpro, .div_projets').hide();
-	})
+	var app = {
 
-	$('.XPpro').on('click', function() {
-		$('.XPpro').addClass('active');
-		$('.competences, .formation, .projets').removeClass('active');
-		$('.div_XPpro').show();
-		$('.div_competences, .div_formation, .div_projets').hide();
-	})
+		init: function() {
+			app.getMenuTopValue();
+			app.listenersMenu();
+		},
 
-	$('.formation').on('click', function() {
-		$('.formation').addClass('active');
-		$('.competences, .XPpro, .projets').removeClass('active');
-		$('.div_formation').show();
-		$('.div_competences, .div_XPpro, .div_projets').hide();
-	})
+		listenersMenu: function() {
+			$('.li_menu').on('click', app.activeMenuItem).bind(this);
+			$('.a_menu').on('click', app.scrollMenu).bind(this);
 
-	$('.projets').on('click', function() {
-		$('.projets').addClass('active');
-		$('.competences, .formation, .XPpro').removeClass('active');
-		$('.div_projets').show();
-		$('.div_competences, .div_formation, .div_XPpro').hide();
-	})
+			$('.a_menu').on('click', app.test).bind(this);
+		},
 
-$('.ui.sticky')
-  .sticky()
-;
+		activeMenuItem: function() {
+			$('.li_menu').removeClass("active")
+			$(this).addClass("active");
+		},
+
+		scrollMenu: function() {
+			var page = $(this).attr('href');
+			var speed = 700;
+			$('html, body').animate( {scrollTop: $(page).offset().top}, speed);
+		},
+
+		getMenuTopValue: function() {
+			var menuTopValue = $('.container_menu').offset().top;
+			$(window).scroll(function() {
+				app.stickyNav(menuTopValue);
+			});
+		},
+		
+		stickyNav: function(menuTop) {
+			var scrollTop = $(window).scrollTop();
+			if (scrollTop > menuTop) {
+				$('.container_menu').addClass('sticky');
+			} else {
+				$('.container_menu').removeClass('sticky');
+			}
+		}
+
+	}
+
+	app.init();
+
 })();
