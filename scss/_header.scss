@@ -1,0 +1,51 @@
+
+.block_header {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.title {
+	width: 55%;
+
+	h1 {
+		font-family: $special_font;
+		font-size: 3em;
+		margin-bottom: 0em;
+	}
+
+	h2 {
+		font-family: $special_font;
+		font-size: 2em;
+		margin-top: 0;
+		margin-bottom: 0.2em;
+	}
+
+	.infos_header {
+		color: grey;
+		font-weight: bold;
+	}
+
+}
+
+.photo {
+	width: 17%;
+	padding-top: 0.4em;
+
+	img {
+		height: 7em;
+		width: 7em;
+		border-radius: 50%;
+	}
+}
+
+.presentation-paragraph {
+	margin: 3em 0;
+	width: 90%;
+
+	.important_header {
+		font-weight: bold;
+		color: $emphasize_color;
+	}
+}
+
+

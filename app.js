@@ -31,5 +31,7 @@
 		$('.div_competences, .div_formation, .div_XPpro').hide();
 	})
 
-
+$('.ui.sticky')
+  .sticky()
+;
 })();

@@ -1,0 +1,11 @@
+
+$main_font: 'Helvetica Neue',Arial,Helvetica,sans-serif;
+$special_font:  'Dosis', sans-serif;
+
+$main_color: #2b2a2a;
+$emphasize_color: teal;
+$light_color: grey;
+
+@import 'general';
+@import 'header';
+@import 'menu';
