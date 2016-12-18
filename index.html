@@ -3,8 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/semantic-ui/2.2.6/semantic.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Dosis|Droid+Sans|Lora|PT+Sans|Ubuntu" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/fontawesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/semantic-ui/2.2.6/components/button.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/semantic-ui/2.2.6/components/grid.min.css">
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -18,13 +20,11 @@
 			</div>
 			<div class="block_header title">
 				<h1>Laure Milian</h1> 
-				<h2>Développeuse web & mobile</h2>
+				<h2 class="soustitre_header">Développeuse web & mobile</h2>
 				<span class="infos_header">26 ans - Permis B - Toulouse</span>
 			</div>
 			<div class="block_header pictos">
-				<a id='picto' href="https://fr.linkedin.com/in/laure-milian-597652a8"><i class="circular inverted grey linkedin link icon"></i></a>
-				<a href="https://github.com/Laure-Milian"><i class="circular inverted grey github link icon"></i></a>
-				<i class="circular inverted grey link mail icon"></i>
+				<a  href="https://fr.linkedin.com/in/laure-milian-597652a8"><i id='picto' class="fa fa-linkedin" aria-hidden="true"></i></a><a href="https://github.com/Laure-Milian"><i id='picto' class="fa fa-github" aria-hidden="true"></i></a><a  href="https://fr.linkedin.com/in/laure-milian-597652a8"><i id='picto' class="fa fa-envelope" aria-hidden="true"></i></a>
 			</div>
 			<p class="presentation-paragraph">Actuellement en <span class="important_header">formation intensive développement web et mobile</span> à Simplon. J'ai étudié la <span class="important_header">communication</span> et l'événementiel, j'ai travaillé dans le <span class="important_header">webmarketing</span> et la <span class="important_header">gestion de projet web</span>. Polyvalente, curieuse, j'apprends et je m'adapte vite ! 
 			</p>
@@ -43,27 +43,69 @@
 		</div>
 
 		<!-- Competences -->
-		<div id="competences" class="div_competences">
-			<div class="ui grid">
-				<div class="equal width colum">Développement web</div>
-				<div class="equal width colum">Gestion de projet</div>
-				<div class="equal width colum">Webmarketing</div>
-				<div class="equal width colum">Communication</div>
-			</div>
-			<h3 class="titres_sections">Langues</h3>
-			<div class="ui list">
-				<div class="item"><h4>Français</h4></div>
-				<div class="item">lu, écrit, parlé</div>
-				<div class="item"><h4>Anglais</h4></div>
-				<div class="item">lu, écrit parlé</div>
-				<div class="item"><h4>Espagnol</h4></div>
-				<div class="item">notions</div>
-				<div class="item"><h4>LSF</h4></div>
-				<div class="item">notions</div>
+		<div id="competences" class="container_session">
+			<div class="ui equal width grid">
+				<div class="column">
+					<div class="icon_competences">
+						<i class="fa fa-code fa-2x" aria-hidden="true"></i>
+					</div>
+					<h3 class="titres_competences">Languages</h3>
+					<ul class="ul_competences">
+						<li><i class="fa fa-check-square-o" aria-hidden="true"></i>HTML</li>
+						<li><i class="fa fa-check-square-o" aria-hidden="true"></i>CSS</li>
+						<li><i class="fa fa-check-square-o" aria-hidden="true"></i>Javascript</li>
+						<li><i class="fa fa-check-square-o" aria-hidden="true"></i>Node.js</li>
+						<li><i class="fa fa-pencil-square-o" aria-hidden="true"></i>PHP</li>
+					</ul>
+				</div>
+				<div class="column">
+					<div class="icon_competences">
+						<i class="fa fa-code fa-2x" aria-hidden="true"></i>
+					</div>
+					<h3 class="titres_competences">Outils & technos</h3>
+					<ul class="ul_competences">
+						<li><i class="fa fa-check-square-o" aria-hidden="true"></i>Express.js</li>
+						<li><i class="fa fa-check-square-o" aria-hidden="true"></i>Moment.js</li>
+						<li><i class="fa fa-check-square-o" aria-hidden="true"></i>OpenStreetMap/Leaflet</li>
+						<li><i class="fa fa-check-square-o" aria-hidden="true"></i>Fs, body-parser</li>
+						<li><i class="fa fa-pencil-square-o" aria-hidden="true"></i>React</li>
+						<li><i class="fa fa-pencil-square-o" aria-hidden="true"></i>Laravel</li>
+					</ul>
+				</div>
+				<div class="column">
+					<div class="icon_competences">
+						<i class="fa fa-code fa-2x" aria-hidden="true"></i>
+					</div>
+					<h3 class="titres_competences"> Webmarketing</h3>
+					<ul class="ul_competences">
+						<li><i class="fa fa-check-square-o" aria-hidden="true"></i>SEO</li>
+						<li><i class="fa fa-check-square-o" aria-hidden="true"></i>SEA</li>
+						<li><i class="fa fa-check-square-o" aria-hidden="true"></i>Emailing</li>
+						<li><i class="fa fa-check-square-o" aria-hidden="true"></i>Réseaux sociaux</li>
+						<li><i class="fa fa-check-square-o" aria-hidden="true"></i>Suivi clients grands comptes</li>
+					</ul>
+				</div>
+
+
+				<div class="column">
+					<div class="icon_competences">
+						<i class="fa fa-code fa-2x" aria-hidden="true"></i>
+					</div>
+					<h3 class="titres_competences">Langues</h3>
+					<ul class="ul_competences">
+						<li><i class="fa fa-check-square-o" aria-hidden="true"></i>Français (lu, écrit, parlé)</li>
+						<li><i class="fa fa-check-square-o" aria-hidden="true"></i>Anglais (lu, écrit, parlé)</li>
+						<li><i class="fa fa-check-square-o" aria-hidden="true"></i>Espagnol (notions)</li>
+						<li><i class="fa fa-check-square-o" aria-hidden="true"></i>Langue des signes Fr(notions)</li>
+					</ul>
+				</div>
+
 			</div>
 		</div>
 
-		<div id="experiences_pro" class="div_XPpro">
+		<div id="experiences_pro" class="container_session">
+
+			<h2 class="titres_sections"> Expériences professionnelles</h2>
 
 			<div class="bloc-formation">
 				<div class="dates">
@@ -190,7 +232,8 @@
 		</div>
 
 		<!-- Formation -->
-		<div id="formation" class="div_formation">
+		<div id="formation" class="container_session">
+			<h2 class="titres_sections">Formation</h2>
 			<div class="bloc-formation">
 				<div class="dates">
 					2016
@@ -272,7 +315,8 @@
 
 
 		<!-- Projets -->
-		<div id="projets" class="div_projets">
+		<div id="projets" class="container_session">
+			<h2 class="titres_sections">Projets</h2>
 			<div class="ui equal width grid">
 				<div class="row">
 					<div class="ui column">
@@ -349,8 +393,7 @@
 
 	</div>
 	<script src="https://cdn.jsdelivr.net/jquery/3.1.1/jquery.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/semantic-ui/2.2.6/semantic.min.js"></script>
-
+	<script src="https://cdn.jsdelivr.net/semantic-ui/2.2.6/components/checkbox.min.js"></script>
 	<script src="app.js"></script>
 
 </body>

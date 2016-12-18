@@ -24,6 +24,7 @@
 			padding-left: 1em;
 			padding-right: 1em;
 			padding-bottom: 0.65em;
+			text-decoration: none;
 		}
 	}
 
@@ -37,7 +38,6 @@
 	font-weight: bold;
 	color: $main_color;
 	border-bottom: 0.2em solid $main_color;
-	padding-bottom: 0.8em;
 
 	a {
 		color: $main_color;
