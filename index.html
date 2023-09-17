@@ -1,198 +1,397 @@
 <!DOCTYPE html>
-<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
-<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
-<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
+<html lang="en"> 
 <head>
-    <title>CV Laure Milian - Développeuse front-end</title>
-    <!-- Meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="CV Laure Milian, 5 ans d'expérience en tant que développeuse web et mobile (Javascript, PHP, Java, Swift).">
-    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-    <!-- Global CSS -->
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
-    <!-- Plugins CSS -->
-    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
-    
-    <!-- Theme CSS -->  
-    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-      <![endif]-->
-  </head> 
+	<title>CV Laure Milian - Fullstack Engineer</title>
+	
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
+	<link rel="shortcut icon" href="favicon.svg"> 
+	
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+	
+	<!-- FontAwesome JS-->
+	<!-- <script src="assets/fontawesome/js/all.min.js"></script> -->
+    <script src="https://kit.fontawesome.com/cb81440751.js" crossorigin="anonymous"></script>
 
-  <body>
-    <div class="wrapper">
-        <div class="sidebar-wrapper">
-            <div class="profile-container">
-                <h1 class="name">Laure Milian</h1>
-                <h3 class="tagline">Développeuse front-end</h3>
-            </div><!--//profile-container-->
-            
-            <div class="contact-container container-block">
-                <ul class="list-unstyled contact-list">
-                    <li>32 ans - Permis B</li>
-                    <li class="mail"><a href="mailto:laure.milian.cv@gmail.com" target="_blank">laure.milian.cv@gmail.com</a></li>
-                    <li class="linkedin"><a href="https://fr.linkedin.com/in/laure-milian-597652a8" target="_blank">linkedin.com/laure-milian</a></li>
-                </ul>
-            </div><!--//contact-container-->
-            <div class="education-container container-block">
-                <h2 class="container-block-title">Technologies</h2>
-                <div class="item">
-                    <h4 class="degree">Front-end</h4>
-                    <h5 class="meta">HTML, CSS, Javascript (jQuery, Vue.js)</h5>
-                </div><!--//item-->
-                <div class="item">
-                    <h4 class="degree">Back-end</h4>
-                    <h5 class="meta">PHP (Wordpress, Laravel, Symfony), Java (Grails)</h5>
-                </div><!--//item-->
-                <div class="item">
-                    <h4 class="degree">Mobile</h4>
-                    <h5 class="meta">Swift (iOS)</h5>
-                </div><!--//item-->
-            </div><!--//education-container-->
+	
+	<!-- Theme CSS -->  
+	<link id="theme-style" rel="stylesheet" href="assets/css/devresume.css">
 
-            <div class="languages-container container-block">
-                <h2 class="container-block-title">Langues</h2>
-                <ul class="list-unstyled interests-list">
-                    <li>Français <span class="lang-desc">Natif</span></li>
-                    <li>Anglais <span class="lang-desc">B2</span></li>
-                </ul>
-            </div>
-            
-        </div><!--//sidebar-wrapper-->
-        
-        <div class="main-wrapper">
+    <!-- If you're reading this : I pinky promise to never do this on a project we're working on together ;) -->
+    <style type="text/css">
+        .resume-main .item-title {
+            text-decoration: underline;
+        }
+        .resume-profile-image {
+            border-radius: 50% !important;
+        }
+    </style>
 
-            <section class="section summary-section">
-                <h2 class="section-title"><i class="fa fa-user"></i>Mon profil</h2>
-                <div class="summary">
-                    <p>
-                       J'ai plus de <strong>5 ans d'expérience</strong> en tant que développeuse fullstack et j'ai contribué à livrer plus de <strong>50 projets</strong> (applications web et mobiles).
-                    </p>
-                    <p>
-                        Je suis à la recherche d'un poste de <strong>développeuse front-end</strong> (React, Vue.js ou Angular).
-                    </p>
-                    <p>
-                        Je suis disponible en <strong>télétravail</strong> ou <strong>hybride sur Toulouse</strong> (2j/semaine en présentiel).
-                    </p>
-                </div><!--//summary-->
-            </section><!--//section-->
+</head> 
 
-            <section class="section experiences-section">
-                <h2 class="section-title"><i class="fa fa-briefcase"></i>Expériences professionnelles</h2>
+<body>
+	
+	<div class="main-wrapper">
+		<div class="container px-3 px-lg-5">
+			<article id="element-to-print" class="resume-wrapper mx-auto theme-bg-light p-5 mb-5 my-5 shadow-lg">
+				
+				<div class="resume-header">
+					<div class="row align-items-center">
+						<div class="resume-title col-12 col-md-12 col-lg-4 col-xl-6">
+							<h2 class="resume-name mb-0 text-uppercase">Laure Milian</h2>
+							<div class="resume-tagline mb-3 mb-lg-0">
+                                <span class="only-en">Fullstack Engineer</span>
+                                <span class="only-fr">Développeuse Fullstack</span>
+                            </div>
+						</div><!--//resume-title-->
+                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 text-lg-end">
+                            <div class="mb-2">
+                                <button id="switch-language-btn" type="button" class="btn block btn-outline-light" data-html2canvas-ignore="true">
+                                    <span class="only-en">French / Français</span>
+                                    <span class="only-fr">English / Anglais</span>
+                                </button>                                
+                            </div>
+                            <div class="mb-2 mb-lg-0">                            
+                                <button id="print-btn" type="button" class="btn block btn-outline-light" data-html2canvas-ignore="true">
+                                    <span class="only-en">Download as PDF</span>
+                                    <span class="only-fr">Télécharger en PDF</span>
+                                </button>  
+                            </div>
+                        </div>
+						<div class="resume-contact col-12 col-md-6 col-lg-4 col-xl-3">
+							<ul class="list-unstyled mb-0">
+								<li class="mb-2">
+                                    <i class="fas fa-phone-square fa-fw fa-lg me-2 "></i>
+                                    <a class="resume-link" href="tel:#">+336 07 60 29 69</a>
+                                </li>
+								<li class="mb-2">
+                                    <i class="fas fa-envelope-square fa-fw fa-lg me-2"></i>
+                                    <a class="resume-link" href="mailto:'laure.milian.cv@gmail.com'">laure.milian.cv@gmail.com</a>
+                                </li>
+                                <li class="mb-2">
+                                    <i class="fas fa-map-marker-alt fa-fw fa-lg me-2"></i>Toulouse, France
+                                </li>
+                                <li class="mb-0">
+                                    <i class="fas fa-cake-candles fa-fw fa-lg me-2"></i>33
+                                    <span class="only-en"> years old</span>
+                                    <span class="only-fr"> ans</span>
+                                </li>
+							</ul>
+						</div><!--//resume-contact-->
+					</div><!--//row-->
+					
+				</div><!--//resume-header-->
+				<hr>
+				<div class="resume-intro py-3">
+					<div class="row align-items-center">
+						<div class="col-12 col-md-3 col-xl-2 text-center">
+						    <img id="profile-picture" class="resume-profile-image mb-3 mb-md-0 me-md-5  ms-md-0 rounded mx-auto" src="assets/images/profile-picture.jpg" alt="image">
+						</div>
+						
+                        <div class="col text-start">
 
-                <div class="item">
-                    <div class="meta">
-                        <div class="upper-row">
-                            <h3 class="job-title">Développeuse web et mobile en agence</h3>
-                            <div class="time">2017 - 2022</div>
-                        </div><!--//upper-row-->
-                        <div class="company">Bleu 122 - Toulouse, 5 ans et 4 mois</div>
-                    </div><!--//meta-->
-                    <div class="details">
-                        <ul>
-                            <li>Création d'applications sur mesure, au forfait.</li>
-                            <li>Participation à plus de 50 projets livrés en production.</li>
-                            <li>Languages utilisées : Java JEE (Grails), Javascript (jQuery et Vue.js), PHP (Symfony, Wordpress), Swift (iOS).</li>
-                            <li>Différents secteurs d'activités : aviation civile, énergies, porteurs de projets individuels...</li>
-                            <li>Participation à toutes les étapes d'un projet, du recueil des besoins client à la mise en production.</li>
-                            <li>Travail en équipe ou en autonomie, selon les projets.</li>
-                            <li><a href="https://www.bleu122.com/projets/">Quelques exemples de projets réalisés</a></li>
-                        </ul>
-                    </div><!--//details-->
-                </div><!--//item-->
-                
-                <div class="item">
-                    <div class="meta">
-                        <div class="upper-row">
-                            <h3 class="job-title">Webmarketing et gestion de projet web</h3>
-                            <div class="time">2014 - 2016</div>
-                        </div><!--//upper-row-->
-                        <div class="company">Ctoutvert (agence web) - Toulouse, 1 an et 2 mois</div>
-                    </div><!--//meta-->
-                    <div class="details">
-                        <ul>
-                            <li>Gestion clients grands comptes</li>
-                            <li>SEO, rédaction optimisée</li>
-                            <li>Acquisition de trafic : Adwords, réseaux sociaux, newsletters</li>
-                        </ul>
-                    </div><!--//details-->
-                </div><!--//item-->
-                
-            </section><!--//section-->
-            
-            <section class="section experiences-section">
-                <h2 class="section-title"><i class="fa fa-graduation-cap"></i>Formation</h2>
+                            <p class="mb-2">
+                                <span class="only-en">I have <strong>5 years of experience as a fullstack engineer</strong>.</span>
+                                <span class="only-fr">J'ai <strong>5 ans d'expérience en tant que développeuse fullstack</strong>.</span>
+                            </p>
+
+                            <p class="mb-2">
+                                <span class="only-en">I had the opportunity to <strong>contribute to more than 50 projects</strong> (web and mobile applications).</span>
+                                <span class="only-fr">J'ai eu l'opportunité de <strong>contribuer à plus de 50 projets</strong> (applications web et mobiles).</span>
+                            </p>
+
+                            <p class="mb-2">
+                                <span class="only-en">I am particularly interested by the <strong>front-end</strong> part of development and would like to work with React, Vue.js or Angular.</span>
+                                <span class="only-fr">Je souhaite désormais me spécialiser sur la partie <strong>front-end</strong> (de préférence React, Vue.js ou Angular).</span>
+                            </p>
+
+                            <p class="mb-0">
+                                <span class="only-en">I am available for <strong>immediate employment</strong> (or before July 2024), as a <strong>remote worker</strong> (or 2 days/week on site at Toulouse).</span>
+                                <span class="only-fr">Je suis <strong>disponible pour une prise de poste immédiate</strong> ou d'ici juillet 2024, en <strong>télétravail ou hybride sur Toulouse</strong> (2j/semaine en présentiel).</span>
+                            </p>
+
+                        </div><!--//col-->
+
+					</div>
+				</div><!--//resume-intro-->
+				<hr>
+				<div class="resume-body">
+					<div class="row">
+						<div class="resume-main col-12 col-lg-8 col-xl-9   pe-0   pe-lg-5">
+							<section class="work-section py-3">
+
+								<h3 class="text-uppercase resume-section-heading mb-4">
+                                    <span class="only-en">Work Experiences</span>
+                                    <span class="only-fr">Expériences professionnelles</span>
+                                </h3>
+
+                                <div class="item mb-4">
+									<div class="item-heading row align-items-center mb-3">
+										<h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">
+                                            <span class="only-en">Web and mobile developer</span>
+                                            <span class="only-fr">Développeuse web et mobile</span>
+                                        </h4>
+										<div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end">
+                                            <a href="https://www.bleu122.com/" target="_blank">Bleu122</a> | 2017 - 2022 (5 ans et 4 mois)
+                                        </div>
+									</div>
+									<div class="item-content">
+                                        <p>
+                                            <span class="only-en">Bleu122 <strong>creates web and mobile applications from scratch</strong>. I started at the company for an intership. Following this intership I've been hired as a web and mobile developer, then as <strong>lead web developer.</strong></span>
+                                            <span class="only-fr">Bleu122 est une <strong>agence de création d'applications web et mobiles sur mesure</strong> que j'ai rejoint en tant que stagiaire. J'ai ensuite été embauchée en CDI comme développeuse web et mobile, puis en tant que <strong>lead web.</strong></span>
+                                        </p>
+                                        <p>
+                                            <span class="only-en">I had the opportunity to work on <strong>more than 50 projects</strong> for various types of companies (veterinary clinic, companies in aeronautics, podcasts publisher...)</span>
+                                            <span class="only-fr">J'ai eu l'occasion de travailler sur <strong>plus de 50 projets</strong>, concernant des <strong>domaines d'activités très variés</strong> (clinique vétérinaire, aéronautique, édition et diffusion de podcasts...)</span>
+                                        </p>
+                                        <p>
+                                            <span class="only-en">I have been involved at all levels of the life cycle of an IT project, from the first meeting with a new client to publishing the application online or on applications stores.</span>
+                                            <span class="only-fr">J'ai pu <strong>intervenir à tous les niveaux du cycle de vie d'un projet</strong>, du recueil du besoin client à la mise en production.</span>
+                                        </p>
+                                        <p>
+                                            <span class="only-en">I had the chance to see the company grow from 4 to 17 employees. I helped support this growth and organize the team as a member of the <strong>management committee</strong>.</span>                      
+                                            <span class="only-fr">J'ai également eu la chance de voir l'entreprise évoluer (passage de 4 à 17 salariés) et de participer à sa structuration, notamment par mon rôle au sein du <strong>comité de direction</strong>.</span>
+                                        </p>
+                                        <p>
+                                            <span class="only-en">Some projects I worked on:</span>                                            
+                                            <span class="only-fr">Quelques projets sur lesquels j'ai travaillé :</span>
+                                        </p>
+										<ul class="resume-list">
+
+											<li class="mb-2">
+                                                <strong>
+                                                    <a href="https://www.bleu122.com/projets/pica-app" class="theme-link" target="_blank">Pica</a>
+                                                </strong> - Grails / jQuery
+                                                <br/>
+                                                <span class="only-en">Web application to manage collisions between planes and animals for French Civil Aviation Authority.</span>
+                                                <span class="only-fr">Application web de gestion des collisions avions/animaux pour la Direction Générale de l'Aviation Civile.</span>
+                                            </li>
+
+                                            <li class="mb-2">
+                                                <strong>
+                                                    <a href="https://www.bleu122.com/projets/priceinsight-app" class="theme-link" target="_blank">PriceInsight</a>
+                                                </strong> - Grails / jQuery
+                                                <br/>
+                                                <span class="only-en">Web application to collect and analyse prices from concurrence for TotalEnergies.</span>
+                                                <span class="only-fr">Applications de recueil, contrôle et analyse de prix de produits concurrents pour TotalEnergies.</span>
+                                            </li>
+
+                                            <li class="mb-2">
+                                                <strong>
+                                                    <a href="https://www.bleu122.com/projets/omitzuka-app" class="theme-link" target="_blank">Omitzuka</a>
+                                                </strong> - Grails / Vue.js
+                                                <br/>
+                                                <span class="only-en">Mobile application to bet (for free) on sports with friends.</span>
+                                                <span class="only-fr">Application mobile permettant de parier gratuitement sur des matchs sportifs.</span>
+                                            </li>
+
+										</ul>
+									</div>
+								</div><!--//item-->
+								<div class="item mb-3">
+									<div class="item-heading row align-items-center mb-3">
+										<h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">
+                                            <span class="only-en">Webmarketing and project management</span>
+                                            <span class="only-fr">Webmarketing et gestion de projet web</span>
+                                        </h4>
+										<div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end">
+                                            <a href="https://www.ctoutvert.com/" target="_blank">Ctouvert</a> | 2015 - 2016 (1 an et 2 mois)
+                                        </div>
+									</div>
+									<div class="item-content">
+                                        <p>
+                                            <span class="only-en">Ctoutvert is a company offering <strong>e-commerce solutions for tourism</strong>, including a software for online reservation used by numerous campsites across Europe.</span>
+                                            <span class="only-fr">Ctoutvert est une société de <strong>logiciels e-commerce pour le tourisme</strong>. Elle propose notamment un logiciel de réservations en ligne qui est utilisé par de nombreux campings à travers l'Europe.</span>
+                                        </p>
+                                        <p>
+                                            <span class="only-en">I worked on different subjects: project management, SEO, SEA (Adwords), social networks, newsletters...</span>
+                                            <span class="only-fr">J'intervenais sur différents sujets : gestion de clients grands comptes, SEO, SEA, rédaction optimisée, réseaux sociaux, newsletters...</span>
+                                        </p>
+                                        <p>
+                                            <span class="only-en">I worked with a team of approximately 20 developers and this collaboration that made me want to become one myself!</strong></span>
+                                            <span class="only-fr">Je travaillais en direct avec une équipe d'une vingtaine de développeurs. C'est cette collaboration qui m'a donné l'envie de devenir moi-même développeuse !</span>
+                                        </p>
+									</div>
+								</div><!--//item-->
+								
+							</section><!--//work-section-->
+
+                            <section id="certifications-section" class="project-section py-3">
+                                <h3 class="text-uppercase resume-section-heading mb-4">Certifications</h3>
+                                <div class="item mb-3">
+                                    <div class="item-heading row align-items-center mb-3">
+                                        <h4 class="item-title col-12 col-md-6 col-lg-9 mb-2 mb-md-0">
+                                            <span class="only-en">Build a Modern Computer from First Principles: Nand to Tetris</span>
+                                            <span class="only-fr">Construire un ordinateur à partir de principes de base</span>
+                                        </h4>
+                                        <div class="item-meta col-12 col-md-6 col-lg-3 text-muted text-start text-md-end">
+                                            <a href="https://www.coursera.org/learn/build-a-computer" target="_blank">Coursera (HUJI)</a> | 2023
+                                        </div>
+                                    </div>
+                                    <div class="item-content">
+                                        <p>
+                                            <span class="only-en">The intent of this course is to <strong>build a fully functional computer</strong> (to play Tetris on!).</span>
+                                            <span class="only-fr">L'objectif de ce cours est de <strong>développer différents éléments (CPU, RAM, OS...) afin d'obtenir un ordinateur fonctionnel</strong> sur lequel jouer à Tetris.</span>
+                                        </p>
+                                        <p>
+                                            <span class="only-en">My motivation for taking this class was to <strong>gain a deeper understanding of all the layers that constitute a modern computer</strong>.</span>
+                                            <span class="only-fr">J'ai voulu suivre ce cours afin d'<strong>approfondir ma compréhension du fonctionnement de tous les composants qui constituent un ordinateur moderne</strong>.</span>
+                                        </p>
+                                        <p>
+                                            <span class="only-en">Before taking this course I developed programs running on a magic and mysterious box. Now it's still magic but not that mysterious anymore 🙂</span>
+                                            <span class="only-fr">Avant ce cours, mon principal outil de travail était une boîte magique et mystérieuse. Maintenant la magie est toujours présente mais le mystère est levé 🙂</span>      
+                                        </p>
+                                        <ul class="resume-list">
+                                            <li>
+                                                <span class="only-en">
+                                                    <a href="https://github.com/Laure-Milian/nand2tetris" class="theme-link" target="_blank">My Github page with all the completed projects</a>
+                                                </span>
+                                                <span class="only-fr">
+                                                    <a href="https://github.com/Laure-Milian/nand2tetris" class="theme-link" target="_blank">Ma page Github avec tous les projets finalisés</a>
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="only-en">
+                                                    Coursera Certifications : 
+                                                    <a href="https://www.coursera.org/account/accomplishments/certificate/42CJM5UHQ6QU" class="theme-link" target="_blank">part 1</a>
+                                                     - 
+                                                    <a href="https://www.coursera.org/account/accomplishments/certificate/JSXPQZ788KSD" class="theme-link" target="_blank">part 2</a>
+                                                </span>
+                                                <span class="only-fr">
+                                                    Certificats Coursera : 
+                                                    <a href="https://www.coursera.org/account/accomplishments/certificate/42CJM5UHQ6QU" class="theme-link" target="_blank">partie 1</a>
+                                                     - 
+                                                    <a href="https://www.coursera.org/account/accomplishments/certificate/JSXPQZ788KSD" class="theme-link" target="_blank">partie 2</a>
+                                                </span>
+                                            </li>
+                                        </ul>
+                                        
+                                    </div>
+                                </div><!--//item-->
                                 
-                <div class="item">
-                    <div class="meta">
-                        <div class="upper-row">
-                            <h3 class="job-title">Autoformation</h3>
-                            <div class="time">En cours</div>
-                        </div><!--//upper-row-->
-                        <div class="company">En ligne sur différents supports</div>
-                        <div class="details">
-                            <ul>
-                                <li><a href="https://roadmap.sh/frontend/?fbclid=IwAR3eBC4V58jA5IZo_UwLXhSnYG-da35fehrJfcvfoeeHJgQdWsYmbn2hAJI">Spécialisation front-end</a></li>
-                                <li><a href="https://www.nand2tetris.org/">"From Nand to Tetris : Building a Modern Computer From First Principles"</a></li>
-                            </ul>
-                        </div><!--//details-->
-                        
-                    </div><!--//meta-->
-                </div><!--//item-->
-                
-                <div class="item">
-                    <div class="meta">
-                        <div class="upper-row">
-                            <h3 class="job-title">Développement web et mobile</h3>
-                            <div class="time">sept. 2016 - mars 2017</div>
-                        </div><!--//upper-row-->
-                        <div class="company">Simplon.co - Toulouse, 6 mois</div>
-                    </div><!--//meta-->
-                </div><!--//item-->
-                
-                <div class="item">
-                    <div class="meta">
-                        <div class="upper-row">
-                            <h3 class="job-title">Master 2 Communication Numérique</h3>
-                            <div class="time">2015</div>
-                        </div><!--//upper-row-->
-                        <div class="company">Toulouse 3 UPS - Toulouse - Mention Assez Bien</div>
-                    </div><!--//meta-->
-                </div><!--//item-->
+                            </section><!--//project-section-->  
 
-                <div class="item">
-                    <div class="meta">
-                        <div class="upper-row">
-                            <h3 class="job-title">Licence Information et Communication</h3>
-                            <div class="time">2012</div>
-                        </div><!--//upper-row-->
-                        <div class="company">UCO - Angers - Mention Bien</div>
-                    </div><!--//meta-->
-                </div><!--//item-->
+						</div><!--//resume-main-->
+						<aside class="resume-aside col-12 col-lg-4 col-xl-3 px-lg-4 pb-lg-4">
+                            
+                            <section class="skills-section py-3">
+                                <h3 class="text-uppercase resume-section-heading mb-4">
+                                    <span class="only-en">Languages</span>
+                                    <span class="only-fr">Langues</span>
+                                </h3>
+                                <ul class="list-unstyled resume-lang-list">
+                                    <li class="mb-2">
+                                        <span class="only-en"><strong>French</strong> <span class="text-muted">- Native</span></span>
+                                        <span class="only-fr"><strong>Français</strong> <span class="text-muted">- Natif</span></span>
+                                    </li>
+                                    <li>
+                                        <span class="only-en"><strong>English</strong> <span class="text-muted">- B2 (Professional)</span></span>
+                                        <span class="only-fr"><strong>Anglais</strong> <span class="text-muted">- B2 (Opérationnel)</span></span>
+                                        <div class="resume-degree-time text-muted">
+                                            <span class="only-en">1 year of practice in Australia</span>
+                                            <span class="only-fr">1 an passé en Australie pour pratiquer</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </section><!--//certificates-section-->
 
-            </section><!--//section-->
+							<section class="skills-section py-3">
+								<h3 class="text-uppercase resume-section-heading mb-4">
+                                    <span class="only-en">Technologies</span>
+                                    <span class="only-fr">Technologies</span>
+                                </h3>
+								<div class="item">
+									<ul class="list-unstyled resume-skills-list">
+										<li class="mb-2"><strong>JavaScript</strong> - jQuery, Vue.js</li>
+										<li class="mb-2"><strong>PHP</strong> - Wordpress, Laravel, Symfony<li>
+										<li class="mb-2"><strong>Java</strong> - Groovy, Grails</li>
+										<li class="mb-2"><strong>iOS</strong> - Swift</li>
+										<li class="mb-2">
+                                            <strong>SQL/HQL</strong> 
+                                            <span class="only-en">and database conception</span>
+                                            <span class="only-fr">et conception de BDD</span>
+                                        </li>
+                                        <li>
+                                            <span class="only-en">
+                                                <strong>Others</strong> - I am a quick learner and always curious to get to work with new tools :)
+                                            </span>
+                                            <span class="only-fr">
+                                                <strong>Autres</strong> - Je m'adapte rapidement et je suis toujours intéressée par la perspective de monter en compétences sur de nouveaux outils :)                                    
+                                            </span>
+                                        </li>
+									</ul>
+								</div><!--//item-->
+							</section><!--//skills-section-->
+		
+							<section class="education-section py-3">
+								<h3 class="text-uppercase resume-section-heading mb-4">
+                                    <span class="only-en">Education</span>
+                                    <span class="only-fr">Formation</span>                                            
+                                </h3>
+								<ul class="list-unstyled resume-education-list">
+									<li class="mb-3">
+										<div class="resume-degree font-weight-bold">
+                                            <span class="only-en"><strong>Mobile & web development</strong></span>
+                                            <span class="only-fr"><strong>Développement web & mobile</strong></span>
+                                        </div>
+										<div class="resume-degree-org text-muted">Simplon.co</div>
+										<div class="resume-degree-time text-muted">2016 - 2017</div>
+									</li>
+									<li>
+										<div class="resume-degree font-weight-bold">
+                                            <span class="only-en"><strong>Master 2 Digital Communication</strong></span>
+                                            <span class="only-fr"><strong>Master 2 Communication Numérique</strong></span>
+                                        </div>
+										<div class="resume-degree-org text-muted">UCO Angers / Toulouse 3 UPS</div>
+										<div class="resume-degree-time text-muted">2009 - 2015</div>
+									</li>
+								</ul>
+							</section><!--//education-section-->
+							
+						</aside><!--//resume-aside-->
+					</div><!--//row-->
+				</div><!--//resume-body-->
+				
+                <hr data-html2canvas-ignore="true">
 
-        </div><!--//main-body-->
-    </div>
+				<div class="resume-footer text-center" data-html2canvas-ignore="true">
+					
+                    <ul class="resume-social-list list-inline mx-auto mb-0 d-inline-block text-muted">
+						
+                        <li class="list-inline-item mb-lg-0 me-3">
+                            <a class="resume-link" href="https://www.linkedin.com/in/laure-milian-597652a8/">
+                                <i class="fab fa-linkedin fa-2x me-2" data-fa-transform="down-4"></i><span class="d-none d-lg-inline-block text-muted">linkedin.com/in/laure-milian-597652a8</span>
+                            </a>
+                        </li>
 
-    <footer class="footer">
-        <div class="text-center">
-            <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out other license options via our website: themes.3rdwavemedia.com */-->
-            <small class="copyright">Designed with <i class="fa fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
-        </div><!--//container-->
-    </footer><!--//footer-->
+                        <li class="list-inline-item mb-lg-0 me-3">
+                            <a class="resume-link" href="https://github.com/Laure-Milian">
+                                <i class="fab fa-github-square fa-2x me-2" data-fa-transform="down-4"></i><span class="d-none d-lg-inline-block text-muted">github.com/Laure-Milian</span>
+                            </a>
+                        </li>
+						
+                    </ul>
+				</div><!--//resume-footer-->
+			</article>
+			
+		</div><!--//container-->
+		
+		<footer class="footer text-center py-4"  data-html2canvas-ignore="true">
+			<!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
+			<small class="copyright text-muted">Designed with <span class="sr-only">love</span><i class="fas fa-heart"></i> by <a class="theme-link" href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
+		</footer>
+		
+	</div><!--//main-wrapper-->
+			
 
-    <!-- Javascript -->          
-    <script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
-    <!-- custom js -->
-    <script type="text/javascript" src="assets/js/main.js"></script>            
+    <script src="assets/js/html2pdf.v0.9.3.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
 </body>
 </html> 
 
