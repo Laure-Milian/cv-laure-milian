@@ -12,7 +12,7 @@
         },
 
         listeners: function(argument) {
-            document.getElementById("print-btn").addEventListener("click", app.printPDF);
+            document.getElementById("generate-pdf-btn").addEventListener("click", app.generatePDF);
             document.getElementById("switch-language-btn").addEventListener("click", app.didClickOnSwitchLanguageBtn);
         },
         
@@ -39,6 +39,12 @@
         },
 
         displayLanguage: function(langToShow, langToHide) {
+
+            // Manage download PDF button
+            document.getElementById("download-pdf-btn-"+langToShow).style.display = 'inline-block';
+            document.getElementById("download-pdf-btn-"+langToHide).style.display = 'none';
+
+            // Manage all other translations
             const elementsToShow = document.getElementsByClassName("only-"+langToShow);
             const elementsToHide = document.getElementsByClassName("only-"+langToHide);
             for (let i = 0; i < elementsToShow.length; i++) {
@@ -49,17 +55,20 @@
             }
         },
 
-        printPDF: function() {
+        generatePDF: function() {
 
             let elementToPrint = document.getElementById("element-to-print");
 
             // Set CSS for print
             document.documentElement.style.fontSize = "12px";
-            elementToPrint.classList.remove("my-5", "mb-5");
+            elementToPrint.classList.remove("my-5", "mb-5", "p-5");
+            elementToPrint.classList.add("px-5", "py-4")
+
             document.getElementById("profile-picture").style.maxWidth = "80px";
             let resumeIntroDOM = document.getElementsByClassName("resume-intro")[0];
             resumeIntroDOM.classList.remove("py-3");
             resumeIntroDOM.classList.add("py-1");
+
             let certificationSectionDOM = document.getElementById("certifications-section");
             certificationSectionDOM.classList.remove("py-3");
 
@@ -75,12 +84,13 @@
 
             // Reset CSS for webpage
             worker.then( (pdf) => {
-                document.documentElement.style.fontSize = "inherit";
-                elementToPrint.classList.add("my-5", "mb-5");
+                /*document.documentElement.style.fontSize = "inherit";
+                elementToPrint.classList.add("my-5", "mb-5", "p-5");
+                elementToPrint.classList.remove("px-5", "py-4")
                 document.getElementById("profile-picture").style.maxWidth = "120px";
                 resumeIntroDOM.classList.remove("py-1");
                 resumeIntroDOM.classList.add("py-3");
-                certificationSectionDOM.classList.add("py-3");
+                certificationSectionDOM.classList.add("py-3");*/
             });
 
 

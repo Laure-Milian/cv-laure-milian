@@ -22,7 +22,7 @@
 	<!-- Theme CSS -->  
 	<link id="theme-style" rel="stylesheet" href="assets/css/devresume.css">
 
-    <!-- If you're reading this : I pinky promise to never do this on a project we're working on together ;) -->
+    <!-- If you're reading this : I pinky swear to never do this on a project we're working on together ;) -->
     <style type="text/css">
         .resume-main .item-title {
             text-decoration: underline;
@@ -56,11 +56,16 @@
                                     <span class="only-fr">English / Anglais</span>
                                 </button>                                
                             </div>
-                            <div class="mb-2 mb-lg-0">                            
-                                <button id="print-btn" type="button" class="btn block btn-outline-light" data-html2canvas-ignore="true">
-                                    <span class="only-en">Download as PDF</span>
-                                    <span class="only-fr">Télécharger en PDF</span>
-                                </button>  
+                            <div class="mb-2 mb-lg-0">
+                                <a id="download-pdf-btn-en" href="assets/pdf/cv-laure-milian-en.pdf" target="_blank" download="cv-laure-milian-en.pdf" class="btn block btn-outline-light" data-html2canvas-ignore="true">
+                                    PDF Version
+                                </a>
+                                <a id="download-pdf-btn-fr" href="assets/pdf/cv-laure-milian-fr.pdf" target="_blank" download="cv-laure-milian-fr.pdf" class="btn block btn-outline-light" data-html2canvas-ignore="true">
+                                    Version PDF
+                                </a>
+                                <button id="generate-pdf-btn" type="button" class="btn block btn-outline-light" data-html2canvas-ignore="true" style="display: none;">
+                                    Générer le PDF
+                                </button>
                             </div>
                         </div>
 						<div class="resume-contact col-12 col-md-6 col-lg-4 col-xl-3">
@@ -106,8 +111,8 @@
                             </p>
 
                             <p class="mb-2">
-                                <span class="only-en">I am particularly interested by the <strong>front-end</strong> part of development and would like to work with React, Vue.js or Angular.</span>
-                                <span class="only-fr">Je souhaite désormais me spécialiser sur la partie <strong>front-end</strong> (de préférence React, Vue.js ou Angular).</span>
+                                <span class="only-en">I am particularly interested by the <strong>front-end</strong> part of development and would like to work with Vue.js, React or Angular.</span>
+                                <span class="only-fr">Je souhaite désormais me spécialiser sur la partie <strong>front-end</strong> (de préférence en Vue.js, React ou Angular).</span>
                             </p>
 
                             <p class="mb-0">
@@ -236,7 +241,7 @@
                                     <div class="item-content">
                                         <p>
                                             <span class="only-en">The intent of this course is to <strong>build a fully functional computer</strong> (to play Tetris on!).</span>
-                                            <span class="only-fr">L'objectif de ce cours est de <strong>développer différents éléments (CPU, RAM, OS...) afin d'obtenir un ordinateur fonctionnel</strong> sur lequel jouer à Tetris.</span>
+                                            <span class="only-fr">L'objectif de ce cours est de <strong>développer différents éléments (CPU, RAM, OS...) afin d'obtenir un ordinateur fonctionnel</strong>.</span>
                                         </p>
                                         <p>
                                             <span class="only-en">My motivation for taking this class was to <strong>gain a deeper understanding of all the layers that constitute a modern computer</strong>.</span>
@@ -318,10 +323,10 @@
                                         </li>
                                         <li>
                                             <span class="only-en">
-                                                <strong>Others</strong> - I am a quick learner and always curious to get to work with new tools :)
+                                                <strong>Others</strong> - I am a quick learner and always curious to get to work with new tools!
                                             </span>
                                             <span class="only-fr">
-                                                <strong>Autres</strong> - Je m'adapte rapidement et je suis toujours intéressée par la perspective de monter en compétences sur de nouveaux outils :)                                    
+                                                <strong>Autres</strong> - Je m'adapte rapidement et je suis toujours intéressée par la perspective de monter en compétences sur de nouveaux outils !                                    
                                             </span>
                                         </li>
 									</ul>
@@ -357,9 +362,9 @@
 					</div><!--//row-->
 				</div><!--//resume-body-->
 				
-                <hr data-html2canvas-ignore="true">
+                <hr>
 
-				<div class="resume-footer text-center" data-html2canvas-ignore="true">
+				<div class="resume-footer text-center">
 					
                     <ul class="resume-social-list list-inline mx-auto mb-0 d-inline-block text-muted">
 						
@@ -372,6 +377,12 @@
                         <li class="list-inline-item mb-lg-0 me-3">
                             <a class="resume-link" href="https://github.com/Laure-Milian">
                                 <i class="fab fa-github-square fa-2x me-2" data-fa-transform="down-4"></i><span class="d-none d-lg-inline-block text-muted">github.com/Laure-Milian</span>
+                            </a>
+                        </li>
+
+                        <li class="list-inline-item mb-lg-0 me-3">
+                            <a class="resume-link" href="https://laure-milian.github.io/cv-laure-milian/">
+                                <i class="fa-solid fa-otter fa-2x me-2" data-fa-transform="down-4"></i><span class="d-none d-lg-inline-block text-muted">https://laure-milian.github.io/cv-laure-milian/</span>
                             </a>
                         </li>
 						
