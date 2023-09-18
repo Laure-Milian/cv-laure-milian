@@ -41,8 +41,15 @@
         displayLanguage: function(langToShow, langToHide) {
 
             // Manage download PDF button
-            document.getElementById("download-pdf-btn-"+langToShow).style.display = 'inline-block';
-            document.getElementById("download-pdf-btn-"+langToHide).style.display = 'none';
+            document.getElementById("download-pdf-btn-"+langToShow).style.display = "inline-block";
+            document.getElementById("download-pdf-btn-"+langToHide).style.display = "none";
+            
+            // If local env = show button to generate pdf instead of download
+            const url = window.location.href;
+            if (url.startsWith("file:///") && false) {
+                document.getElementById("download-pdf-btn-"+langToShow).style.display = "none";
+                document.getElementById("generate-pdf-btn").style.display = "inline-block";
+            }
 
             // Manage all other translations
             const elementsToShow = document.getElementsByClassName("only-"+langToShow);
@@ -75,7 +82,7 @@
             // Print PDF
             const opt = {
                 margin: 0,
-                filename: 'cv-laure-milian.pdf',
+                filename: "cv-laure-milian-"+app.lang+".pdf",
                 html2canvas: { scale: 2, useCORS: true },
                 jsPDF: { format: 'a4', orientation: 'portrait' }
             };
