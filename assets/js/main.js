@@ -46,7 +46,7 @@
             
             // If local env = show button to generate pdf instead of download
             const url = window.location.href;
-            if (url.startsWith("file:///") && false) {
+            if (url.startsWith("file:///")) {
                 document.getElementById("download-pdf-btn-"+langToShow).style.display = "none";
                 document.getElementById("generate-pdf-btn").style.display = "inline-block";
             }
